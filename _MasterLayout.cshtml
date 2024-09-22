@@ -1,0 +1,69 @@
+﻿
+<style>
+    #top{
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+        background-color: dimgrey;    
+    }
+    #body {
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+        boder-block-color: antiquewhite;
+    }
+    #MainContent 
+    {
+        width: 70%;
+        background-color: whitesmoke;
+        float: left;
+    }
+    #right_sidebar {
+        width: 30%; 
+        background-color: blanchedalmond;
+        float: left;
+    }
+    #bottom 
+    {
+        width: 100%;
+        height:fit-content;
+        background-color: red;
+        text-decoration-color: white;
+    }
+</style>
+
+
+ 
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id=" top">
+        <h1> <strong>MALL </strong> </h1>   
+    </div>
+    <div id="body">
+        <p> 
+            <strong>
+                 <table border="1" cellpadding="10" callspacing="10">
+                     HOME &nbsp; PAGES &nbsp; CATEGORY &nbsp; PRODUCTS &nbsp; FASHION &nbsp; SHOES &nbsp; BLOG
+                 </table>
+            </strong>
+          
+        </p>
+        <div id="MainContent">
+             @RenderBody()
+             content 
+        </div>
+        @*<div id=" right_sidebar">
+            <p> Right_sidebar </p>
+        </div>*@
+    </div>
+    @*<div id="bottom">
+        <p> Bottom </p>
+    </div>*@
+</body>
+</html>
